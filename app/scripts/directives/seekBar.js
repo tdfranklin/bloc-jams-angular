@@ -54,10 +54,18 @@
 
                 /**
                  * @function scope.fillStyle
-                 * @desc Returns width of seek bar based on calculated percent
+                 * @desc Contols seek bar fill
                  */
                 scope.fillStyle = function() {
                     return {width: percentString()};
+                };
+
+                /**
+                 * @function scope.thumbStyle
+                 * @desc Controls thumb button position
+                 */
+                scope.thumbStyle = function() {
+                    return {left: percentString()};
                 };
 
                 /**
